@@ -1,6 +1,8 @@
 f# Dive into Strings
 ## `str` indices 
 
+python [doc](https://docs.python.org/3/library/stdtypes.html) page
+
 
 text = "Half a bee, philosophically, must ipso facto half not be"
 
