@@ -15,5 +15,16 @@ For the rare and radiant maiden whom the angels name Lenore--
             Nameless here for evermore.
 """
 
+text = text.replace(",", " ")
+text = text.replace(";", " ")
+text = text.replace("-", " ")
+words = text.lower().split()
+print(words)
+print(len(words))
+
+uniques = set(words)
+print(uniques)
+print(len(uniques))
+
 
 
