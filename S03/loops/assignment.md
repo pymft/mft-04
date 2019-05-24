@@ -1,5 +1,7 @@
 ## question!
 
+[solution](./assignemnt_solution)
+
 ```python
 n = 6
 ```
