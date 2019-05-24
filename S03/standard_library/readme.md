@@ -25,7 +25,7 @@ res = m.sin(0.5 * m.pi)
 print(res)
 ```
 
-### import specific object from standart library 
+### import specific object from standard library 
 ```python
 from math import sin, pi
 
@@ -33,3 +33,11 @@ res = sin(0.5*pi)
 print(res)
 ```
 
+
+### import specific object from standard library and alias the name 
+ 
+```python
+from random import randint as rnd
+
+rnd(1, 200)
+```
