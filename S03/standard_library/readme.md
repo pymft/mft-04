@@ -13,7 +13,7 @@
 ```python
 import math
 
-res = math.sin(10)
+res = math.sin(0.5 * math.pi)
 print(res)
 ```
 
@@ -21,15 +21,15 @@ print(res)
 ```python
 import math as m
 
-res = m.sin(10)
+res = m.sin(0.5 * m.pi)
 print(res)
 ```
 
 ### import specific object from standart library 
 ```python
-from math import sin
+from math import sin, pi
 
-res = sin(10)
+res = sin(0.5*pi)
 print(res)
 ```
 
