@@ -1,0 +1,4 @@
+number of triangles = 470
+Equilateral = 3
+Right = 6
+Isosceles = 96
