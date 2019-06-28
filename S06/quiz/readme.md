@@ -1,0 +1,1 @@
+[link](https://github.com/iamvee/hwpy/tree/master/06-wasteland)
