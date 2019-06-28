@@ -6,3 +6,4 @@ def infinite_counter():
         i += 1
 
 
+
