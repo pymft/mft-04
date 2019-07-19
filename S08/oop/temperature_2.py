@@ -13,8 +13,7 @@ class Temperature:
         self.celsius = float(celsius)
 
 
-if __name__ == '__main__':
-    import doctest
+t = Temperature(100)
 
-    doctest.testmod()
+print(t.fahrenheit)
 
