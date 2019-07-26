@@ -16,5 +16,5 @@ def main_page():
         return render_template("index.html", bmi=bmi, bmi_preview=bmi_preview)
 
 
-
 app.run(host="0.0.0.0")
+
