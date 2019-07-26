@@ -11,8 +11,9 @@ def main_page():
         weight = float(request.form['w'])
         height = float(request.form['h'])
         bmi = weight / height ** 2
+        bmi_preview = f"{bmi:.2f}"
 
-        return render_template("index.html", javab=bmi)
+        return render_template("index.html", bmi=bmi, bmi_preview=bmi_preview)
 
 
 

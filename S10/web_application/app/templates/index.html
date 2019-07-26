@@ -9,6 +9,28 @@
 
 <form method="post">
     <table>
+        {% if bmi %}
+        <tr>
+            <td>BMI:</td>
+            <td>{{ bmi_preview }}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                {% if bmi > 28 %}
+                    Obese
+                {% elif bmi > 24 %}
+                    Over-weight
+                {% elif bmi > 19 %}
+                    Normal
+                {% else %}
+                    Under-weight
+                {% endif %}
+            </td>
+
+        </tr>
+        {% endif %}
+
         <tr>
             <td>Weight</td>
             <td><input name="w"></td>
@@ -25,11 +47,6 @@
     </table>
 </form>
 
-{% if javab %}
-    {% if javab > 28 %}
-        <h1>Obese</h1>
-    {% endif %}
-    <h1>{{ javab }}</h1>
-{% endif %}
+
 </body>
 </html>
