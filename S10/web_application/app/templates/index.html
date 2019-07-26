@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div class="container col-md-3 col-sm-4">
+<div class="container col-md-4 col-sm-9">
     <div class="row align-items-center">
         <div class="col align-self-center">
             <h1 class="bd-title "> BMI Calculator</h1>
@@ -35,7 +35,9 @@
                         </td>
                     </tr>
                     {% endif %}
-
+                    <tr>
+                        <td><input placeholder="Name" class="col-sm" name="name"></td>
+                    </tr>
                     <tr>
                         <td><input placeholder="Weight" class="col-sm" name="w"></td>
                     </tr>
@@ -49,6 +51,16 @@
                     </tr>
                 </table>
             </form>
+            <h3>history</h3>
+            <table class="table">
+                {% for row in rows %}
+                <tr>
+                {% for c in row %}
+                    <td>{{c}}</td>
+                {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
         </div>
     </div>
 </div>
