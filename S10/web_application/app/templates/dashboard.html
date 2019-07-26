@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Welcome {{ username }}</h1>
+
+    {% for i in range(rep) %}
+       <h3>{{ username }}</h3>
+    {% endfor %}
+
+    {% if 1 < 0 %}
+        <h1> One is greater than zero</h1>
+    {% else %}
+        <h1> ELSE</h1>
+    {% endif %}
+</body>
+</html>
