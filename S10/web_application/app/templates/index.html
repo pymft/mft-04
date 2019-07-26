@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My App</title>
+    <title>BMI Calculator</title>
 </head>
 <body>
-<h1>Hello</h1>
+
+
+<form method="post">
+    <table>
+        <tr>
+            <td>Weight</td>
+            <td><input name="w"></td>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td><input name="h"></td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+{% if javab %}
+    {% if javab > 28 %}
+        <h1>Obese</h1>
+    {% endif %}
+    <h1>{{ javab }}</h1>
+{% endif %}
 </body>
 </html>

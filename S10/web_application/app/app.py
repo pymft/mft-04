@@ -1,17 +1,19 @@
-from flask import Flask,render_template
+from flask import Flask,render_template, request
 
 app = Flask('my application')
 
 
-@app.route('/')
+@app.route('/', methods=["GET", "POST"])
 def main_page():
-    return render_template("index.html")
+    if request.method == 'GET':
+        return render_template("index.html")
+    else:
+        weight = float(request.form['w'])
+        height = float(request.form['h'])
+        bmi = weight / height ** 2
 
-@app.route('/dashboard')
-@app.route('/dashboard/<user>/<int:rep>')
-def dashboard_page(user="None", rep=1):
-    return render_template("dashboard.html",
-                           username=user, rep=rep)
+        return render_template("index.html", javab=bmi)
+
 
 
 app.run(host="0.0.0.0")
