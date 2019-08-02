@@ -30,11 +30,11 @@ def main_page():
         height = float(request.form['h'])
         name = request.form['name']
         bmi = weight / height ** 2
-        bmi_preview = f"{bmi:.2f}"
+        bmi_preview = f"{bmi:.4f}"
         write_into_file(name, weight, height)
         rows = get_data()
         return render_template("index.html", bmi=bmi, bmi_preview=bmi_preview, rows=rows)
 
 
-app.run(host="0.0.0.0")
+app.run(host="0.0.0.0", port=8088, debug=True)
 
