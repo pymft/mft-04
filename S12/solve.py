@@ -15,4 +15,6 @@ def fun(text, n):
 
     return out
 
+
+
 print(fun("abcde", 3))
